@@ -26,15 +26,27 @@ git clone https://github.com/elmerginez/form-validation.git
 ```
 cd form-validation
 ```
-3. Instala las dependencias necesarias:
+3. Crea un entorno virtual:
+- En Windows:
+```
+python -m venv .venv
+.venv\Scripts\activate
+```
+- En Linux:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+4. Instala las dependencias necesarias:
 ```
 pip install -r requirements.txt
 ```
-4. Ejecuta la aplicación:
+5. Ejecuta la aplicación:
 ```
 flask --app App run
 ```
-5. Abre tu navegador y ve a http://localhost:5000 para ver el formulario.
+6. Abre tu navegador y ve a http://localhost:5000 para ver el formulario.
 
 ## Estructura del Proyecto
 - index.html: El archivo HTML principal que contiene el formulario de contacto.
