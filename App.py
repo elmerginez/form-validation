@@ -41,3 +41,11 @@ def procesar_formulario():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+'''
+#Problema Identificado
+El código original intentaba usar el método `match()` directamente sobre una cadena, lo que causaba un error de atributo (`AttributeError`).
+
+# Solución Implementada
+Se cambió el uso de `match()` por `re.match()` del módulo `re` para validar el correo electrónico y otros datos del formulario. Esto se realizó para asegurar que las validaciones se realicen correctamente usando expresiones regulares.
+'''

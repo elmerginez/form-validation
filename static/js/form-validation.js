@@ -17,6 +17,9 @@ form.addEventListener('submit', (e) => {
     } else if (mensaje === '') {
         alert('Por favor, ingrese un mensaje');
     } else {
+        // Se agregó form.submit() para que, después de validar los datos, el formulario pueda ser enviado correctamente al backend.
+        // Antes, sin esta línea, la función e.preventDefault() detenía el envío del formulario incluso cuando los datos eran válidos,
+        // lo que impedía que el backend recibiera la información. Ahora, si todas las validaciones pasan, el formulario se envía.
         form.submit();
     }
 });
